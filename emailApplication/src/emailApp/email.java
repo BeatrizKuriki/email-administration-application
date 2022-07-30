@@ -9,6 +9,7 @@ public class email {
 	private String department;
 	private int mailBoxCapacity;
 	private String alternativeEmail;
+	private int defaultPasswordLength = 10;
 	
 	//first create the constructor to receive the first and last name
 	public email(String firstName, String lastName) {
@@ -19,6 +20,10 @@ public class email {
 		//Call a method asking  for the department
 		this.department = setDepartment();
 		System.out.println("Department "+ this.department);
+		
+		//call a method that return a random password
+		this.password = randomPassword(defaultPasswordLength);
+		System.out.println("Your password is: " + this.password);
 	}
 	
 	
@@ -42,6 +47,16 @@ public class email {
 	
 	
 	//Then generate Random password
+	private String randomPassword(int length) {
+		String passwordSet = "ABCDFEFGHIJKLMNOPQRSTUWXYZ0123456789!@#$%";
+		char[]password = new char[length];
+		for (int i =0; i<length; i++) {
+			int rand = (int)(Math.random() * passwordSet.length());
+			password [i] = passwordSet.charAt(rand);
+			
+		}
+		return new String(password);
+	}
 	
 	
 	//set the mailBoxCapacity
