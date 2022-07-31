@@ -7,8 +7,8 @@ public class email {
 	private String lastName;
 	private String password;
 	private String department;
-	private int mailBoxCapacity;
-	private String alternativeEmail;
+	private int mailBoxCapacity = 200;
+	private String alternateEmail;
 	private int defaultPasswordLength = 10;
 	private String companySuffix = "company.com";
 	
@@ -66,9 +66,18 @@ public class email {
 	
 	
 	//set the mailBoxCapacity
+	public void setMailBoxCapacity(int capacity) {
+		this.mailBoxCapacity = capacity;
+	}
 	
-	//set the alternative email
 	
+	//set the alternate email
+	public void setAlternateEmail(String altEmail) {
+		this.setAlternateEmail = altEmail;
+	}
 	//after change the password
 
+	public void changePassword(String password) {
+		this.password = password;
+	}
 }
