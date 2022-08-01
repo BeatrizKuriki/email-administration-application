@@ -70,14 +70,24 @@ public class email {
 		this.mailBoxCapacity = capacity;
 	}
 	
+	public int getMailBoxCapacity() {
+		return mailBoxCapacity;
+	}
+	public String getAlternateEmail() {
+		return alternateEmail;
+	}
+	
 	
 	//set the alternate email
 	public void setAlternateEmail(String altEmail) {
-		this.setAlternateEmail = altEmail;
+		this.setAlternateEmail = altEmail();
 	}
 	//after change the password
 
 	public void changePassword(String password) {
 		this.password = password;
+	}
+	public String getPassword() {
+		return password;
 	}
 }
