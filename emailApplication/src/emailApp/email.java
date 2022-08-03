@@ -35,9 +35,7 @@ public class email {
 		System.out.println("Your email is :" + email);
 	}
 	
-	
-	
-	
+		
 	
 	
 	
