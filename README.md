@@ -10,27 +10,19 @@ Email administration application é uma aplicação back end construída com int
 A aplicação consiste em um sistema que cadastra novos contratados de uma empresa, para geração do email corporativo é necessário inserir o primeiro e segundo nome do colaborador, escolher qual setor ele trabalha, na sequência o sistema gera um password e por fim gera o email do colaborador com o seguinte configuração : firstName.lastName@sector.company.com
 
 ## Layout 
+
+
+
 <div align = "center">
 
+![image](https://user-images.githubusercontent.com/93167711/185947334-210ecc8c-0b3c-4564-bc7d-e9be8e17a612.png)
 
-
- </div>
-
-## Layout parte 2 
-<div align = "center">
 
 
  
   </div>
   
-  ## Tela Final:
-  <div align = "center">
  
-
-
- </div>
-
-
 
 # Tecnologias utilizadas
 ## Back end
